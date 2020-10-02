@@ -99,7 +99,6 @@ def about(request):
     return render(request, 'about.html', context)
 
 def contact(request):
-    numbers  =  list(range(1,25))
     context  = {'welcome_text': 'Welcome to the contact page' }
     return render(request, 'contact.html', context)
     
