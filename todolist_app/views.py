@@ -103,7 +103,7 @@ def contact(request):
     return render(request, 'contact.html', context)
     
 
-def random_task(request, id):
+def random_task(request):
     s =  SessionStore()
     s.create()
     s.set_expiry(300)

@@ -25,7 +25,7 @@ urlpatterns = [
     path('account/', include('users_app.urls')),
     path('about', todolist_view.about, name='about'),
     path('contact', todolist_view.contact, name='contact'),
-    path('random/<int:id>', todolist_view.random_task , name ='random_task'),
+    path('random/', todolist_view.random_task , name ='random_task'),
     
 
 ]
